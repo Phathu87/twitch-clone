@@ -1,16 +1,16 @@
 {
-  "name": "video-twitch",
+  "name": "@phola/polar-live",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3003",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "postinstall": "prisma generate"
   },
   "dependencies": {
-    "@clerk/nextjs": "^4.29.1",
+    "@clerk/nextjs": "^7.0.12",
     "@clerk/themes": "^1.7.9",
     "@livekit/components-react": "^1.5.1",
     "@prisma/client": "^5.7.0",
@@ -33,7 +33,7 @@
     "livekit-client": "^1.15.5",
     "livekit-server-sdk": "^1.2.7",
     "lucide-react": "^0.294.0",
-    "next": "14.0.4",
+    "next": "^16.2.3",
     "next-themes": "^0.2.1",
     "query-string": "^8.1.0",
     "react": "^18",

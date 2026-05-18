@@ -1,7 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import { Clapperboard } from "lucide-react";
-import { SignInButton, UserButton, currentUser } from "@clerk/nextjs";
+import { SignInButton, UserButton } from "@clerk/nextjs";
+import { currentUser } from "@clerk/nextjs/server";
 
 import { Button } from "@/components/ui/button";
 
@@ -28,7 +29,7 @@ export async function Actions() {
               <span className="hidden lg:block">Dashboard</span>
             </Link>
           </Button>
-          <UserButton afterSignOutUrl="/" />
+          <UserButton />
         </div>
       )}
     </div>
